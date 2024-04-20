@@ -41,27 +41,42 @@
     </div>
     <main class="main">
         <div class="container-fluid p-0">
-            <div class="container p-0">
+            <div class="container p-0 d-flex flex-column flex-md-row mw-100">
                 <div class="col col-12 col-md-6">
-                    <div class="image-box position-relative">
-                        <img class="image-box-product-image" src="./dist/images/image-product-1.jpg" alt="shoes photo">
+                    <div class="container-image-box position-relative">
+                        <img class="container-image-box-product-image" src="./dist/images/image-product-1.jpg"
+                            alt="shoes photo">
                         <button class="arrows arrows-arrow-left">
                             <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg" alt="arrow previous">
                         </button>
                         <button class="arrows arrows-arrow-right">
                             <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
                         </button>
+                        <div class="container-image-box-images-list d-none d-md-flex justify-content-between">
+                            <div> <img src="./dist/images/image-product-1-thumbnail.jpg" alt="shoes image">
+                            </div>
+                            <div> <img src="./dist/images/image-product-2-thumbnail.jpg" alt="shoes image">
+                            </div>
+                            <div><img src="./dist/images/image-product-3-thumbnail.jpg" alt="shoes image">
+                            </div>
+                            <div><img src="./dist/images/image-product-4-thumbnail.jpg" alt="shoes image">
+                            </div>
 
+
+
+                        </div>
                     </div>
 
                 </div>
-                <div class="col col-12 col-md-6 p-4">
+                <div class="col col-12 col-md-6 p-4 p-md-0">
                     <h1 class="main-heading">Sneaker company</h1>
                     <h2 class="product-heading">Fall Limited Edition Sneakers</h2>
-                    <p class="product-description">These low-profile snekeakers are your perfect casual wear companion. Featuring a durable rubber
+                    <p class="product-description">These low-profile snekeakers are your perfect casual wear companion.
+                        Featuring a durable rubber
                         outer sole, they'll withstrand everything the weather can offer.</p>
 
-                    <div class="price-box d-flex justify-content-between align-items-center">
+                    <div
+                        class="price-box d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
                         <div class="price-box-new-price-box d-flex align-items-center gap-3">
                             <p class="new-price">$125.00</p>
                             <p class="discount">50%</p>
@@ -70,16 +85,19 @@
                             <p class="old-price">$250.00</p>
                         </div>
                     </div>
-                    <div class="amount-input d-flex align-items-center">
-                        <img src="../dist/images/icon-minus.svg" alt="minus icon">
-                        <p class="current-value">0</p>
-                        <img src="../dist/images/icon-plus.svg" alt="plus icon">
+                    <div class="buttons d-md-flex gap-3">
+                        <div class="amount-input d-flex align-items-center justify-content-between">
+                            <img class="signs p-2" src="./dist/images/icon-minus.svg" alt="minus icon">
+                            <p class="current-value my-auto">0</p>
+                            <img class="signs p-2" src="./dist/images/icon-plus.svg" alt="plus icon">
+                        </div>
+
+                        <button class="add-btn d-flex justify-content-center align-items-center border-0 gap-3">
+                            <img class="add-btn-cart" src="./dist/images/icon-cart-bottom.svg" alt="cart icon">
+                            Add to cart
+                        </button>
                     </div>
 
-                    <button class="add">
-                        <img src="../dist/images/icon-cart.svg" alt="cart icon">
-                        Add to cart
-                    </button>
                 </div>
             </div>
         </div>
