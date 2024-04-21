@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <div class="container-fluid p-0">
+    <div class="app-container px-md-4 p-0">
         <div class="bg-shadow"></div>
         <div class="app position-relative">
             <nav class="nav d-flex justify-content-between">
@@ -27,28 +27,27 @@
                     </ul>
                 </div>
                 <div class="nav-right d-flex align-items-center gap-4">
-                    <img src="./dist/images/icon-cart.svg" alt="cart">
+                    <img class="cart" src="./dist/images/icon-cart.svg" alt="cart">
                     <img class="avatar" src="./dist/images/image-avatar.png" alt="user avatar">
                 </div>
             </nav>
-
-
         </div>
-    </div>
-    <main class="main">
-        <div class="container-fluid p-0">
-            <div class="container p-0 d-flex flex-column flex-md-row mw-100">
+        <main class="main mx-auto">
+            <div class="main-container d-flex flex-column flex-md-row justify-content-between">
                 <div class="col col-12 col-md-6">
-                    <div class="container-image-box position-relative">
-                        <img class="container-image-box-product-image" src="./dist/images/image-product-1.jpg"
-                            alt="shoes photo">
-                        <button class="arrows arrows-arrow-left">
-                            <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg" alt="arrow previous">
-                        </button>
-                        <button class="arrows arrows-arrow-right">
-                            <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
-                        </button>
-                        <div class="container-image-box-images-list d-none d-md-flex justify-content-between">
+                    <div class="main-container-image-box position-relative">
+                        <div class="big-image-box"> <img class="main-container-image-box-product-image"
+                                src="./dist/images/image-product-1.jpg" alt="shoes photo">
+                            <button class="arrows arrows-arrow-left">
+                                <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg"
+                                    alt="arrow previous">
+                            </button>
+                            <button class="arrows arrows-arrow-right">
+                                <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
+                            </button>
+                        </div>
+
+                        <div class="main-container-image-box-images-list d-none d-md-flex justify-content-between">
                             <div> <img src="./dist/images/image-product-1-thumbnail.jpg" alt="shoes image">
                             </div>
                             <div> <img src="./dist/images/image-product-2-thumbnail.jpg" alt="shoes image">
@@ -57,17 +56,14 @@
                             </div>
                             <div><img src="./dist/images/image-product-4-thumbnail.jpg" alt="shoes image">
                             </div>
-
-
-
                         </div>
                     </div>
 
                 </div>
-                <div class="col col-12 col-md-6 p-4 p-md-0">
+                <div class="col col-12 col-md-6">
                     <h1 class="main-heading">Sneaker company</h1>
                     <h2 class="product-heading">Fall Limited Edition Sneakers</h2>
-                    <p class="product-description">These low-profile snekeakers are your perfect casual wear companion.
+                    <p class="product-description">These low-profile sneakers are your perfect casual wear companion.
                         Featuring a durable rubber
                         outer sole, they'll withstrand everything the weather can offer.</p>
 
@@ -93,12 +89,10 @@
                             Add to cart
                         </button>
                     </div>
-
                 </div>
             </div>
-        </div>
-    </main>
-
+        </main>
+    </div>
 
 
     <!-- @include 'scripts.kit' -->
