@@ -13,90 +13,112 @@
 </head>
 
 <body>
-    <div class="app-container px-md-4 p-0">
+
+    <div class="app-container px-md-4 p-0 z-0">
+
         <div class="bg-shadow"></div>
-        <div class="app position-relative">
-            <nav class="nav d-flex justify-content-between">
-                <div class="nav-left d-flex flex-row-reverse flex-md-row align-items-start align-items-md-start gap-2">
-                    <img class="my-auto" src="./dist/images/logo.svg" alt="logo">
-                    <img class="btn open-nav d-md-none" src="./dist/images/icon-menu.svg" alt="nav icon">
-                    <ul
-                        class="nav-left-ul d-flex flex-column flex-md-row align-items-start align-items-md-center p-4 p-md-0">
-                        <img class="btn close-nav d-md-none" src="./dist/images/icon-close.svg" alt="close menu">
-                        <li><a class="nav-left-ul-li-item" href="#">Collections</a></li>
-                        <li><a class="nav-left-ul-li-item" href="#">Men</a></li>
-                        <li><a class="nav-left-ul-li-item" href="#">Women</a></li>
-                        <li><a class="nav-left-ul-li-item" href="#">About</a></li>
-                        <li><a class="nav-left-ul-li-item" href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="nav-right d-flex align-items-center gap-4">
-                    <img class="cart" src="./dist/images/icon-cart.svg" alt="cart">
-                    <img class="avatar" src="./dist/images/image-avatar.png" alt="user avatar">
-                </div>
-            </nav>
+
+        <nav class="nav d-flex justify-content-between">
+            <div class="nav-left d-flex flex-row-reverse flex-md-row align-items-start align-items-md-start gap-2">
+                <img class="my-auto" src="./dist/images/logo.svg" alt="logo">
+                <img class="btn open-nav d-md-none" src="./dist/images/icon-menu.svg" alt="nav icon">
+                <ul
+                    class="nav-left-ul d-flex flex-column flex-md-row align-items-start align-items-md-center p-4 p-md-0">
+                    <img class="btn close-nav d-md-none" src="./dist/images/icon-close.svg" alt="close menu">
+                    <li><a class="nav-left-ul-li-item" href="#">Collections</a></li>
+                    <li><a class="nav-left-ul-li-item" href="#">Men</a></li>
+                    <li><a class="nav-left-ul-li-item" href="#">Women</a></li>
+                    <li><a class="nav-left-ul-li-item" href="#">About</a></li>
+                    <li><a class="nav-left-ul-li-item" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="nav-right d-flex align-items-center gap-4 position-relative">
+                <div class="checkout-popup z-3">
+    <div class="checkout-top">
+        <h3 class="checkout-heading p-2 p-sm-4 mb-0">Cart</h3>
+    </div>
+    <div class="checkout-body m-2 m-sm-4">
+        <div class="content d-flex justify-content-between align-items-center">
+            <img src="./dist/images/image-product-1-thumbnail.jpg" alt="summarize product img"
+                class="summarize-product-img">
+            <div class="summarize-description">
+                <p class="product-name">Fall Limited Edition Sneakers</p>
+                <p class="current-price">$125.00 x 3 <span class="end-price">$375.00</span></p>
+            </div>
+            <img src="../dist/images/icon-delete.svg" alt="delete icon">
         </div>
-        <main class="main mx-auto">
-            <div class="main-container d-flex flex-column flex-md-row justify-content-between">
-                <div class="col col-12 col-md-6">
-                    <div class="main-container-image-box d-flex flex-row flex-md-column position-relative">
-                        <div class="big-image-box">
-                             <img class="main-container-image-box-product-image"
-                                src="./dist/images/image-product-1.jpg" alt="shoes photo">
-                            <button class="arrows d-sm-none arrows-arrow-left">
-                                <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg"
-                                    alt="arrow previous">
-                            </button>
-                            <button class="arrows d-sm-none arrows-arrow-right">
-                                <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
-                            </button>
-                        </div>
+        <div class="finalize">
+            <button class="button checkout-btn border-0 mt-4">Checkout</button>
+        </div>
+    </div>
+</div>
+                <img class="cart " src="./dist/images/icon-cart.svg" alt="cart">
+                <img class="avatar" src="./dist/images/image-avatar.png" alt="user avatar">
+            </div>
+        </nav>
+    </div>
 
-                        <div class="main-container-image-box-images-list d-none d-sm-flex flex-sm-column flex-md-row justify-content-between">
-                            <div> <img src="./dist/images/image-product-1-thumbnail.jpg" alt="shoes image">
-                            </div>
-                            <div> <img src="./dist/images/image-product-2-thumbnail.jpg" alt="shoes image">
-                            </div>
-                            <div><img src="./dist/images/image-product-3-thumbnail.jpg" alt="shoes image">
-                            </div>
-                            <div><img src="./dist/images/image-product-4-thumbnail.jpg" alt="shoes image">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col col-12 col-md-6">
-                    <h1 class="main-heading">Sneaker company</h1>
-                    <h2 class="product-heading">Fall Limited Edition Sneakers</h2>
-                    <p class="product-description">These low-profile sneakers are your perfect casual wear companion.
-                        Featuring a durable rubber
-                        outer sole, they'll withstrand everything the weather can offer.</p>
-
-                    <div
-                        class="price-box d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
-                        <div class="price-box-new-price-box d-flex align-items-center gap-3">
-                            <p class="new-price">$125.00</p>
-                            <p class="discount">50%</p>
-                        </div>
-                        <div class="price-box-old-price-box">
-                            <p class="old-price">$250.00</p>
-                        </div>
-                    </div>
-                    <div class="buttons d-md-flex gap-3">
-                        <div class="amount-input d-flex align-items-center justify-content-between">
-                            <img class="signs p-2" src="./dist/images/icon-minus.svg" alt="minus icon">
-                            <p class="current-value my-auto">0</p>
-                            <img class="signs p-2" src="./dist/images/icon-plus.svg" alt="plus icon">
-                        </div>
-
-                        <button class="add-btn d-flex justify-content-center align-items-center border-0 gap-3">
-                            <img class="add-btn-cart" src="./dist/images/icon-cart-bottom.svg" alt="cart icon">
-                            Add to cart
+    <main class="main mx-auto">
+        <div class="main-container d-flex flex-column flex-md-row justify-content-between">
+            <div class="col col-12 col-md-6">
+                <div class="main-container-image-box d-flex flex-row flex-md-column position-relative">
+                    <div class="big-image-box">
+                        <img class="main-container-image-box-product-image" src="./dist/images/image-product-1.jpg"
+                            alt="shoes photo">
+                        <button class="arrows d-sm-none arrows-arrow-left">
+                            <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg" alt="arrow previous">
+                        </button>
+                        <button class="arrows d-sm-none arrows-arrow-right">
+                            <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
                         </button>
                     </div>
+
+                    <div
+                        class="main-container-image-box-images-list d-none d-sm-flex flex-sm-column flex-md-row justify-content-between">
+                        <div> <img src="./dist/images/image-product-1-thumbnail.jpg" alt="shoes image">
+                        </div>
+                        <div> <img src="./dist/images/image-product-2-thumbnail.jpg" alt="shoes image">
+                        </div>
+                        <div><img src="./dist/images/image-product-3-thumbnail.jpg" alt="shoes image">
+                        </div>
+                        <div><img src="./dist/images/image-product-4-thumbnail.jpg" alt="shoes image">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-12 col-md-6">
+                <h1 class="main-heading">Sneaker company</h1>
+                <h2 class="product-heading">Fall Limited Edition Sneakers</h2>
+                <p class="product-description">These low-profile sneakers are your perfect casual wear companion.
+                    Featuring a durable rubber
+                    outer sole, they'll withstrand everything the weather can offer.</p>
+
+                <div
+                    class="price-box d-flex flex-md-column justify-content-between align-items-center align-items-md-start">
+                    <div class="price-box-new-price-box d-flex align-items-center gap-3">
+                        <p class="new-price">$125.00</p>
+                        <p class="discount">50%</p>
+                    </div>
+                    <div class="price-box-old-price-box">
+                        <p class="old-price">$250.00</p>
+                    </div>
+                </div>
+                <div class="buttons d-md-flex gap-3">
+                    <div class="amount-input d-flex align-items-center justify-content-between">
+                        <img class="signs p-2" src="./dist/images/icon-minus.svg" alt="minus icon">
+                        <p class="current-value my-auto">0</p>
+                        <img class="signs p-2" src="./dist/images/icon-plus.svg" alt="plus icon">
+                    </div>
+
+                    <button class="button add-btn d-flex justify-content-center align-items-center border-0 gap-3">
+                        <img class="add-btn-cart" src="./dist/images/icon-cart-bottom.svg" alt="cart icon">
+                        Add to cart
+                    </button>
                 </div>
             </div>
-        </main>
+        </div>
+    </main>
     </div>
 
 
