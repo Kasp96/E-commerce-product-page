@@ -9,6 +9,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 <link rel="stylesheet" href="./dist/css/style-min.css">
 </head>
 
@@ -55,15 +56,27 @@
         <div class="main-container d-flex flex-column flex-md-row justify-content-between">
             <div class="col col-12 col-md-6">
                 <div class="main-container-image-box d-flex flex-row flex-md-column position-relative">
-                    <div class="big-image-box">
-                        <img class="main-container-image-box-product-image" src="./dist/images/image-product-1.jpg"
-                            alt="shoes photo">
-                        <button class="arrows d-sm-none arrows-arrow-left">
-                            <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg" alt="arrow previous">
-                        </button>
-                        <button class="arrows d-sm-none arrows-arrow-right">
-                            <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
-                        </button>
+                    <div class="big-image-box z-0">
+                        <div class="swiper">
+                            <button class="arrows d-sm-none arrows-arrow-left z-3">
+    <img class="arrows-button-arrow" src="./dist/images/icon-previous.svg" alt="arrow previous">
+</button>
+<button class="arrows d-sm-none arrows-arrow-right z-3">
+    <img class="arrows-button-arrow" src="./dist/images/icon-next.svg" alt="arrow previous">
+</button>
+                            <div class="swiper-wrapper">
+                                <img class="main-container-image-box-product-image swiper-slide"
+                                    src="./dist/images/image-product-1.jpg" alt="shoes photo">
+
+                                <img class="main-container-image-box-product-image swiper-slide"
+                                    src="./dist/images/image-product-2.jpg" alt="shoes photo">
+                                <img class="main-container-image-box-product-image swiper-slide"
+                                    src="./dist/images/image-product-3.jpg" alt="shoes photo">
+                                <img class="main-container-image-box-product-image swiper-slide"
+                                    src="./dist/images/image-product-4.jpg" alt="shoes photo">
+
+                            </div>
+                        </div>
                     </div>
 
                     <div
@@ -114,8 +127,10 @@
     </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="./dist/js/modal-min.js"></script>
 <script src="./dist/js/nav-min.js"></script>
+<script src="./dist/js/swiper-min.js"></script>
 </body>
 
 </html>
